@@ -1,0 +1,221 @@
+.job {
+    // border: 1px solid blue;
+    width: 83%;
+    margin: 0 auto;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+
+    //Side bar
+    .sidebar-container {
+        width: 31%;
+        // border: 1px solid blue;
+        &-top {
+            font-family: Poppins, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #1e86ff;
+
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            & > a {
+                cursor: pointer;
+                &:visited {
+                    color: #1e86ff;
+                }
+                &:hover {
+                    color: #0a65ce;
+                }
+            }
+            & > span:nth-child(1) {
+                transform: rotate(180deg);
+                margin-right: 0.3rem;
+            }
+        }
+        &-bottom {
+            & > span:first-child {
+                font-family: Poppins, sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21px;
+
+                display: block;
+                text-transform: uppercase;
+                color: #b9bdcf;
+                margin-bottom: 1rem;
+            }
+            & > span:nth-child(2) {
+                display: inline;
+                font-family: Poppins, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                color: #334680;
+                margin-right: 5px;
+            }
+            & > a {
+                text-decoration: none;
+                color: #1e86ff;
+                font-family: Poppins, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                &:visited {
+                    color: #1e86ff;
+                }
+                &:hover {
+                    color: #0a65ce;
+                }
+            }
+        }
+    }
+    //Job Description
+    .main-description {
+        width: 65%;
+        &-company {
+            display: flex;
+            & > div:nth-child(1) {
+                // border: 1px solid blue;
+                width: 100%;
+                display: flex;
+                & > span:first-child {
+                    display: block;
+                    font-family: Roboto, sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 21px;
+                    line-height: 28px;
+                    color: #334680;
+                }
+                & > button {
+                    width: 3.938rem;
+                    height: 1.625rem;
+                    border: 1px solid #334680;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    cursor: default;
+                    margin-left: 17px;
+
+                    background-color: #f6f7fb;
+                    font-family: Roboto, sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #334680;
+                }
+            }
+        }
+        &-time {
+            display: flex;
+            align-items: center;
+            margin-top: 9.5px;
+            & > span:nth-child(1) {
+                color: #b7bcce;
+                font-size: 15px;
+                margin-right: 8.5px;
+                margin-top: 0.1rem;
+            }
+            & > span:nth-child(2) {
+                font-family: Roboto, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                color: #b7bcce;
+            }
+            margin-bottom: 2.188rem;
+        }
+        &-block {
+            // border: 1px solid blue;
+            display: flex;
+            & > div:nth-child(1) {
+                border: 1px solid #b9bdcf;
+                border-radius: 4px;
+                width: 3rem;
+                height: 3rem;
+                margin-right: 0.75rem;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                & > img {
+                    width: 100%;
+                }
+            }
+            & > div:nth-child(2) {
+                // border: 1px solid blue;
+                height: 3rem;
+                & > span {
+                    font-family: Roboto, sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #334680;
+                }
+                & > div {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 9.5px;
+                    & > span:nth-child(1) {
+                        color: #b7bcce;
+                        font-size: 15px;
+                        margin-right: 8.5px;
+                        margin-top: 0.1rem;
+                    }
+                    & > span:nth-child(2) {
+                        font-family: Roboto, sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: #b7bcce;
+                    }
+                }
+            }
+            margin-bottom: 1rem;
+        }
+        &-content {
+            // border: 1px solid blue;
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            color: #334680;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .job {
+        width: 90%;
+        display: block;
+
+        .sidebar-container {
+            width: 100%;
+            margin-bottom: 1.625rem;
+        }
+
+        .main-description {
+            width: 100%;
+            &-company {
+                & > div:nth-child(1) {
+                    width: 100%;
+                    display: block;
+                    & > button {
+                        margin-top: 4px;
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
